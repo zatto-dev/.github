@@ -1,0 +1,87 @@
+# Discussion category form. The file name must match the slug of the
+# Discussions category it belongs to (category "RFC" -> rfc.yml).
+title: "RFC: "
+labels:
+  - type/docs
+body:
+  - type: markdown
+    attributes:
+      value: |
+        An RFC is for a decision worth writing down: an architecture change, a
+        dependency we will live with for years, a convention every repository
+        has to follow.
+
+        **The outcome of this discussion must be recorded as an ADR** in
+        `AI-Brain/Decisions/`. The discussion is the debate; the ADR is the
+        record. A closed RFC with no ADR did not happen.
+
+        Day-to-day task tracking stays in [our internal tracker](<internal tracker>).
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: >-
+        What is the situation today, and what forces make a decision necessary
+        now? Constraints, current pain, anything already tried.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: >-
+        The change you propose, concretely enough to disagree with. Include
+        scope, what stays out of scope, and rough migration steps.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: >-
+        Other options, including doing nothing, and the trade-off that makes
+        each one worse than the proposal.
+    validations:
+      required: true
+
+  - type: textarea
+    id: consequences
+    attributes:
+      label: Consequences
+      description: >-
+        What gets easier, what gets harder, and what we are committing to
+        maintain if this is accepted.
+    validations:
+      required: false
+
+  - type: input
+    id: decision-by
+    attributes:
+      label: Decision by
+      description: >-
+        Date after which silence counts as consent. Give people a real window.
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+
+  - type: input
+    id: driver
+    attributes:
+      label: Driver
+      description: Who owns this RFC and will write the ADR once it is decided.
+      placeholder: "@github-handle"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: adr
+    attributes:
+      label: Record keeping
+      options:
+        - label: >-
+            I will record the outcome as an ADR in `AI-Brain/Decisions/` and
+            link it back in this thread before closing.
+          required: true

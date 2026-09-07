@@ -1,0 +1,115 @@
+name: Bug report
+description: Something in the code behaves incorrectly.
+title: "fix: "
+labels:
+  - type/fix
+  - status/triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file this.
+
+        Before you continue:
+        - **Security vulnerabilities do not go here.** Use the process in
+          [SECURITY.md](https://github.com/zatto-dev/.github/blob/main/SECURITY.md).
+        - Roadmap, planning and product-level requests belong in
+          [our internal tracker](<internal tracker>), not in GitHub Issues.
+        - One bug per issue. Keep it reproducible.
+
+  - type: dropdown
+    id: product
+    attributes:
+      label: Affected product
+      description: Which product or service shows the problem?
+      options:
+        - Sertiq
+        - TopSky
+        - Transfferro
+        - Expira
+        - Warrio
+        - Shy Garlic
+        - Other / not listed
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: >-
+        Release tag, package version, or the short commit SHA you are running.
+        If you do not know, write "unknown" rather than guessing.
+      placeholder: "v1.4.2 / 9f3c1ab / unknown"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: The observed behaviour, in plain English.
+      placeholder: Exporting an NCR list returns a 500 instead of a CSV file.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected instead
+      description: The behaviour you believe is correct, and why.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: >-
+        Numbered steps someone else can follow from a clean state. A bug we
+        cannot reproduce gets closed, not fixed.
+      value: |
+        1.
+        2.
+        3.
+
+        Result:
+        Expected:
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Where did you see this?
+      options:
+        - Production
+        - Staging
+        - Local development
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs, stack trace or console output
+      description: >-
+        Paste raw output. It is rendered as a shell block, so no backticks
+        needed. **Redact tokens, passwords, customer data and internal IP
+        addresses before pasting.**
+      render: shell
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing open and closed issues and this is not a duplicate.
+          required: true
+        - label: >-
+            This is not a security vulnerability. (If it is, close this tab and
+            follow SECURITY.md instead.)
+          required: true
+        - label: I have redacted any secrets, credentials or private IP addresses from the text above.
+          required: true

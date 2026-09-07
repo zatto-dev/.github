@@ -1,0 +1,90 @@
+name: Security follow-up (already disclosed and fixed)
+description: Public tracking for hardening work after a vulnerability was disclosed and fixed.
+title: "security: "
+labels:
+  - type/security
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > **STOP. Undisclosed vulnerabilities never go in this form.**
+        > If the issue is not yet fixed and publicly disclosed, close this tab
+        > and follow
+        > [SECURITY.md](https://github.com/zatto-dev/.github/blob/main/SECURITY.md).
+        > Filing an unfixed vulnerability here publishes it to everyone who can
+        > read this repository.
+
+        Use this form **only** for the visible remainder of an issue that has
+        already been fixed and disclosed: follow-up hardening, a dependency
+        bump we still owe, a regression test, a doc or advisory update.
+
+  - type: checkboxes
+    id: disclosure-gate
+    attributes:
+      label: Disclosure gate
+      options:
+        - label: The underlying vulnerability is already **fixed** in a released or merged change.
+          required: true
+        - label: The vulnerability is already **publicly disclosed** (advisory, CVE, release note or public issue).
+          required: true
+        - label: Nothing in this issue reveals an exploitable, unpatched weakness.
+          required: true
+
+  - type: input
+    id: reference
+    attributes:
+      label: Disclosure reference
+      description: >-
+        Link or identifier for the existing advisory, CVE, Dependabot alert or
+        release note that made this public.
+      placeholder: "GHSA-xxxx-xxxx-xxxx / CVE-2026-00000 / release v1.4.2 notes"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: product
+    attributes:
+      label: Affected product
+      options:
+        - Sertiq
+        - TopSky
+        - Transfferro
+        - Expira
+        - Warrio
+        - Shy Garlic
+        - Other / not listed
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What was fixed
+      description: >-
+        One paragraph, at the level of detail already public. Do not add
+        exploitation detail that the advisory did not publish.
+    validations:
+      required: true
+
+  - type: textarea
+    id: remaining-work
+    attributes:
+      label: Remaining work tracked by this issue
+      description: >-
+        The concrete follow-ups: regression test, dependency bump, config
+        default change, documentation, rollout to other repositories.
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Residual risk and affected versions
+      description: >-
+        Which versions are still exposed, what the interim mitigation is, and
+        when the follow-up needs to land.
+    validations:
+      required: false

@@ -1,0 +1,82 @@
+name: Feature or change proposal (code-level)
+description: Propose a concrete change to the code in this repository.
+title: "feat: "
+labels:
+  - type/feat
+  - status/triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Roadmap-level work belongs in [our internal tracker](<internal tracker>).**
+        Our internal tracker is the source of truth for what we build and when. This form is
+        for *code-level* proposals: an API shape, a refactor, a new flag, a
+        library swap — things a reviewer can argue about in a diff.
+
+        If you are asking for a product capability rather than a code change,
+        open it in our internal tracker and link this issue from there.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: >-
+        What is broken, slow, awkward or impossible today? Describe the
+        problem, not your preferred solution.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: >-
+        What you want to change, concretely. Sketch the API, the file layout
+        or the config key if you have one in mind.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: >-
+        What else did you weigh, including doing nothing, and why did you
+        reject it?
+    validations:
+      required: false
+
+  - type: textarea
+    id: affected
+    attributes:
+      label: Who this affects
+      description: >-
+        Which products, repositories, users or internal workflows are touched?
+        Note any breaking change here — if it breaks a consumer, say so
+        explicitly so we can add the `breaking` label.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: size
+    attributes:
+      label: Rough size
+      description: Your honest guess. Used for triage only, not a commitment.
+      options:
+        - XS - under an hour
+        - S - half a day
+        - M - one to two days
+        - L - more than two days, needs splitting
+        - Unknown
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing open and closed issues and this is not a duplicate.
+          required: true
+        - label: This is a code-level change, not a roadmap or product request for the roadmap.
+          required: true
