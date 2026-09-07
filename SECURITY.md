@@ -9,7 +9,8 @@ read about it later. This policy applies across the `zatto-dev` organisation.
 
 - Any repository owned by [github.com/zatto-dev](https://github.com/zatto-dev), public
   or private, including its build and release tooling.
-- The products we operate: Sertiq, TopSky, Transfferro, Expira, Warrio and Shy Garlic,
+- The source repositories published under this organisation, and the products we
+  operate: Sertiq, TopSky, Transfferro, Expira and Warrio,
   together with their public web endpoints.
 - Our own GitHub Actions workflows and the artefacts they produce.
 
@@ -82,8 +83,8 @@ it does not bind our clients or our suppliers.
 
 ## Encryption and alternate contact
 
-- **PGP key:** _placeholder — key and fingerprint to be published here; ask at
-  security@zatto.dev for the current key before sending encrypted material._
+- **Encrypted reports:** email security@zatto.dev and ask for a key before sending
+  anything sensitive; we will reply with one.
 - **Alternate contact:** if security@zatto.dev bounces or you get no acknowledgement
   within the target above, email **hello@zatto.dev** with the subject line
   `SECURITY — no response` and no technical detail, and we will open a private channel.

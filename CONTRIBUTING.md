@@ -50,7 +50,7 @@ Trunk-based. `main` is always deployable.
 ```
 
 Types: `feat`, `fix`, `chore`, `docs`, `refactor`, `test`, `build`, `ci`, `perf`.
-Description in the imperative, lower case, no full stop, under about 70 characters.
+Description in the imperative, lower case, no full stop, 72 characters or fewer — the commit-msg hook rejects anything longer.
 
 Because we squash-merge, **the pull request title becomes the commit message on `main`**
 — so the PR title must itself be a valid Conventional Commit. Commits inside the branch
@@ -114,7 +114,7 @@ ways of getting past a failing hook. If a hook is wrong or too slow, fix the hoo
 say so. If you genuinely have to bypass one — a broken hook mid-incident, say — tell
 someone the same day.
 
-Hooks install with `pnpm lefthook install` (or the repo's `prepare` script). If you have
+Hooks install with `pnpm exec lefthook install` (or the repo's `prepare` script). If you have
 cloned a repo and the hooks are not running, they were never installed; install them.
 
 ## Reviewing

@@ -16,7 +16,7 @@
 A small software studio in Bedford, United Kingdom, working with clients in the UK and
 the EU. Most of what we build is web software: TypeScript on Next.js, with Go or Python
 where those fit the problem better. We work trunk-based, in small increments, behind a
-CI gate that has to be green before anything merges.
+single aggregated CI gate that we do not merge past when it is red.
 
 We also build and run our own products. The same people write the code, own the
 pipelines and pick up the phone when something breaks — there is no handover to a
@@ -30,7 +30,8 @@ separate operations team, because there isn't one.
 - **TopSky** — an aviation and flight-simulation platform, together with a desktop
   livery manager for Microsoft Flight Simulator and X-Plane.
 - **Transfferro**, **Expira**, **Warrio** — smaller commercial products.
-- **Shy Garlic** — a compact Go service, shipped as a distroless image. Open source.
+- **Shy Garlic** — a compact Go service, shipped as a distroless image. To be
+  released as open source.
 
 Most repositories here are private. Public ones appear as they are released.
 

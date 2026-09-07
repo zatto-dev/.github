@@ -12,7 +12,7 @@ body:
         has to follow.
 
         **The outcome of this discussion must be recorded as an ADR** in
-        `AI-Brain/Decisions/`. The discussion is the debate; the ADR is the
+        our internal decision log. The discussion is the debate; the ADR is the
         record. A closed RFC with no ADR did not happen.
 
         Day-to-day task tracking stays in our internal tracker.
@@ -82,6 +82,6 @@ body:
       label: Record keeping
       options:
         - label: >-
-            I will record the outcome as an ADR in `AI-Brain/Decisions/` and
+            An owner will record the outcome as an ADR and
             link it back in this thread before closing.
-          required: true
+          required: false

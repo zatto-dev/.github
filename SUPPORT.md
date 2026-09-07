@@ -10,7 +10,7 @@ products we run.
 
 Please include the product or repository name and, where relevant, roughly when the
 problem started. We are a small team in Bedford, UK, and normally reply within a couple
-of working days.
+of working days. That is what we aim for, not a contractual commitment.
 
 ## Open source repositories
 
