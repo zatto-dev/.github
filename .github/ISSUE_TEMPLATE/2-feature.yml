@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Roadmap-level work belongs in [our internal tracker](<internal tracker>).**
+        **Roadmap-level work belongs in our internal tracker.**
         Our internal tracker is the source of truth for what we build and when. This form is
         for *code-level* proposals: an API shape, a refactor, a new flag, a
         library swap — things a reviewer can argue about in a diff.

@@ -1,19 +1,15 @@
 # Org-wide issue template chooser for zatto-dev.
-# GitHub Free: no branch protection / rulesets, so these links are the only
-# routing signal we get. Keep them short and unambiguous.
+# This repository is PUBLIC. Internal hostnames must never appear here —
+# team members already know where the tracker lives.
 blank_issues_enabled: false
 contact_links:
-  - name: Product backlog, roadmap and sprint work (our internal tracker)
-    url: <internal tracker>
-    about: >-
-      Our internal tracker is the source of truth for tasks, backlog and status. Product
-      requests, roadmap items, planning and anything with a status column
-      belong there, not in GitHub Issues.
-  - name: Question or idea (GitHub Discussions)
+  - name: Question, idea or RFC (GitHub Discussions)
     url: https://github.com/orgs/zatto-dev/discussions
     about: >-
       Usage questions, design debates and RFCs. Ask here before opening an
-      issue if you are not sure something is a defect.
+      issue if you are not sure something is a defect. Note that product
+      backlog, roadmap and sprint status are tracked in our internal tracker,
+      not in GitHub Issues.
   - name: Report a security vulnerability (private)
     url: https://github.com/zatto-dev/.github/blob/main/SECURITY.md
     about: >-

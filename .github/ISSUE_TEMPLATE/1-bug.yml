@@ -14,7 +14,7 @@ body:
         - **Security vulnerabilities do not go here.** Use the process in
           [SECURITY.md](https://github.com/zatto-dev/.github/blob/main/SECURITY.md).
         - Roadmap, planning and product-level requests belong in
-          [our internal tracker](<internal tracker>), not in GitHub Issues.
+          our internal tracker, not in GitHub Issues.
         - One bug per issue. Keep it reproducible.
 
   - type: dropdown

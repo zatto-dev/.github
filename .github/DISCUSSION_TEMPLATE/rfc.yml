@@ -15,7 +15,7 @@ body:
         `AI-Brain/Decisions/`. The discussion is the debate; the ADR is the
         record. A closed RFC with no ADR did not happen.
 
-        Day-to-day task tracking stays in [our internal tracker](<internal tracker>).
+        Day-to-day task tracking stays in our internal tracker.
 
   - type: textarea
     id: context
