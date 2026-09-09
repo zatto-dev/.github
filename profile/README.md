@@ -26,12 +26,11 @@ separate operations team, because there isn't one.
 
 - **Sertiq** — a quality-management issue tracker for ISO 9001 shops: NCR, CAPA,
   calibration, MRB, Pareto and KPI. It is an add-on issue tracker, not a full QMS.
-
 - **TopSky** — an aviation and flight-simulation platform, together with a desktop
   livery manager for Microsoft Flight Simulator and X-Plane.
 - **Transfferro**, **Expira**, **Warrio** — smaller commercial products.
-- **Shy Garlic** — a compact Go service, shipped as a distroless image. To be
-  released as open source.
+- **[Shy Garlic](https://github.com/zatto-dev/shy-garlic)** — a homelab dashboard
+  where the YAML file and the UI are the same thing. Open source, AGPL-3.0.
 
 Most repositories here are private. Public ones appear as they are released.
 

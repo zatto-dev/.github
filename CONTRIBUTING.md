@@ -61,7 +61,7 @@ can be scrappier, but keep them conventional anyway: it makes the PR title obvio
 Every change reaches `main` through a pull request. Even a one-line fix, even yours.
 
 1. Push your branch and open a PR against `main`.
-2. Fill in what changed and why, and how you tested it. Link the our internal tracker item if there is
+2. Fill in what changed and why, and how you tested it. Link the tracker item if there is
    one.
 3. Wait for the **`gate`** job. Every repository's CI ends in a single job called `gate`
    that aggregates all the checks — lint, types, tests, secret scan, SAST, workflow
